@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPROUT - Delete Account</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+  .header { background: #1A3A5C; color: white; padding: 30px; border-radius: 12px; margin-bottom: 30px; text-align: center; }
+  .header h1 { color: #D4A017; margin: 0 0 8px 0; }
+  .header p { color: #ccc; margin: 0; }
+  h2 { color: #1A3A5C; margin-top: 32px; }
+  .step { background: #f0f4ff; border-left: 4px solid #1A3A5C; padding: 16px 20px; margin: 12px 0; border-radius: 0 8px 8px 0; }
+  .step strong { color: #1A3A5C; }
+  .warning { background: #fff8e1; border-left: 4px solid #D4A017; padding: 16px 20px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+  .deleted { background: #ffebee; border-left: 4px solid #b71c1c; padding: 16px 20px; margin: 12px 0; border-radius: 0 8px 8px 0; }
+  .kept { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 16px 20px; margin: 12px 0; border-radius: 0 8px 8px 0; }
+  .contact { background: #1A3A5C; color: white; padding: 20px; border-radius: 12px; margin-top: 32px; }
+  .contact a { color: #D4A017; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th { background: #1A3A5C; color: white; padding: 10px 14px; text-align: left; }
+  td { padding: 10px 14px; border-bottom: 1px solid #ddd; }
+  tr:nth-child(even) { background: #f5f5f5; }
+  .footer { text-align: center; color: #999; font-size: 13px; margin-top: 48px; padding-top: 20px; border-top: 1px solid #ddd; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>✝ SPROUT</h1>
+  <p>Sunday School Management Platform</p>
+  <p>Eritrean Orthodox Tewahdo Church</p>
+</div>
+
+<h1>Delete Account &amp; Data Request</h1>
+
+<p>You have the right to request deletion of your SPROUT account and all associated personal data. This page explains how to submit a deletion request and what data will be removed.</p>
+
+<div class="warning">
+  <strong>⚠️ Warning:</strong> Account deletion is permanent and cannot be undone. All your progress, grades, attendance records, and certificates will be permanently deleted.
+</div>
+
+<h2>How to Delete Your Account</h2>
+
+<h3>Option 1 — From Within the App (Recommended)</h3>
+<div class="step"><strong>Step 1:</strong> Open SPROUT and sign in to your account</div>
+<div class="step"><strong>Step 2:</strong> Go to your <strong>Dashboard → Settings</strong></div>
+<div class="step"><strong>Step 3:</strong> Tap <strong>Profile → Delete Account</strong></div>
+<div class="step"><strong>Step 4:</strong> Confirm deletion — your account will be deleted within <strong>30 days</strong></div>
+
+<h3>Option 2 — Email Request</h3>
+<div class="step">
+  <strong>Send an email to:</strong> <a href="mailto:ghebretesfamariam@gmail.com">ghebretesfamariam@gmail.com</a><br><br>
+  <strong>Subject:</strong> SPROUT Account Deletion Request<br><br>
+  <strong>Include:</strong>
+  <ul>
+    <li>Your full name</li>
+    <li>Your registered email address</li>
+    <li>Your church name and church code</li>
+    <li>Reason for deletion (optional)</li>
+  </ul>
+  We will process your request within <strong>30 days</strong> and send a confirmation email.
+</div>
+
+<h2>What Data is Deleted</h2>
+
+<div class="deleted">
+  <strong>🗑️ Permanently Deleted:</strong>
+  <ul>
+    <li>Your name and email address</li>
+    <li>Your password and login credentials</li>
+    <li>Your profile photo</li>
+    <li>Your quiz scores and answers</li>
+    <li>Your attendance records</li>
+    <li>Your lesson notes and bookmarks</li>
+    <li>Your flashcards and study plans</li>
+    <li>Your prayer wall posts</li>
+    <li>Your messages with instructors</li>
+    <li>Your feedback reports</li>
+    <li>Your device push notification token</li>
+  </ul>
+</div>
+
+<div class="kept">
+  <strong>📋 Data That May Be Retained:</strong>
+  <ul>
+    <li>Anonymised statistical data used for church reporting (no personal identifiers)</li>
+    <li>Certificates already issued — copies may be retained by your church administrator</li>
+    <li>Financial records required by law (if any transactions were made — SPROUT has no purchases)</li>
+  </ul>
+  <p>Retained data contains no personal identifiers and cannot be linked back to you.</p>
+</div>
+
+<h2>Data Deletion Timeline</h2>
+<table>
+  <tr><th>Action</th><th>Timeline</th></tr>
+  <tr><td>Account access disabled</td><td>Immediately upon confirmation</td></tr>
+  <tr><td>Personal data deleted from Firestore</td><td>Within 30 days</td></tr>
+  <tr><td>Firebase Auth account deleted</td><td>Within 30 days</td></tr>
+  <tr><td>Confirmation email sent</td><td>Within 30 days</td></tr>
+  <tr><td>Backup data purged</td><td>Within 90 days</td></tr>
+</table>
+
+<h2>Delete Only Your Data (Without Deleting Account)</h2>
+<p>If you want to delete specific data without closing your account (for example, delete your prayer wall posts or profile photo), you can:</p>
+<ul>
+  <li><strong>Profile photo:</strong> Go to Profile → tap photo → Remove photo</li>
+  <li><strong>Prayer wall posts:</strong> Go to Prayer Wall → tap your post → Delete</li>
+  <li><strong>Lesson notes:</strong> Go to Notebook → swipe to delete individual notes</li>
+  <li><strong>Flashcards:</strong> Go to Flashcards → My Cards → tap delete icon</li>
+</ul>
+<p>Or email us at <a href="mailto:ghebretesfamariam@gmail.com">ghebretesfamariam@gmail.com</a> with the specific data you want deleted.</p>
+
+<div class="contact">
+  <h2 style="color:#D4A017; margin-top:0;">Contact Us</h2>
+  <p><strong>Holy Trinity Eritrean Orthodox Tewahdo Church</strong><br>
+  Chicago, Illinois, USA<br>
+  Email: <a href="mailto:ghebretesfamariam@gmail.com">ghebretesfamariam@gmail.com</a><br>
+  App: SPROUT — Sunday School Management Platform</p>
+</div>
+
+<div class="footer">
+  <p>✝ SPROUT — Eritrean Orthodox Tewahdo Church Sunday School Platform</p>
+  <p>© 2026 Holy Trinity Eritrean Orthodox Tewahdo Church, Chicago. All rights reserved.</p>
+  <p><a href="sprout_privacy_policy.html">Privacy Policy</a></p>
+</div>
+
+</body>
+</html>
